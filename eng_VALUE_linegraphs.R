@@ -43,7 +43,7 @@ ggplot(
   geom_line(size = 1) +
   geom_point(size = 4) +
   coord_cartesian(xlim = c(0.5,4.5), ylim = c(0, 4)) + 
-  scale_x_discrete(labels = c(year1, year2, year3, year4)) +
+  scale_x_discrete(labels = c("", year1, year2, year3, year4)) +
   #scale_x_continuous(breaks=c(1.5,2.5,3.5,4.5))
   theme(
     axis.line = element_line("grey"), 

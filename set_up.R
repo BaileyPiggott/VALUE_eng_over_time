@@ -23,7 +23,7 @@ n_1f <- nrow(eng_1_fall) # sample size
 eng_1_fall <- eng_1_fall %>% 
   summarise_each(funs(mean(., na.rm = TRUE))) %>% 
   select(-Course_sample) %>% # remove course_sample column
-  cbind(year = 1, .) # add year column
+  cbind(year = 0.9, .) # add year column
 
 
 
@@ -35,7 +35,7 @@ n_1w <- nrow(eng_1_winter) #sample size
 eng_1_winter <- eng_1_winter %>% 
   summarise_each(funs(mean(., na.rm = TRUE)))%>% 
   select(-Course_sample) %>%
-  cbind(year = 1.5, .)
+  cbind(year = 1.3, .)
 
 
 #year 4 means
